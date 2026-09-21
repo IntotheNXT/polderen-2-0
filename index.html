@@ -195,6 +195,8 @@
         linear-gradient(135deg,#f4e7dd 0%,#f8f3eb 52%,#eaf0ed 100%);
       color:var(--ink);
     }
+    .movement-intro{margin-bottom:44px}
+    .movement-intro h1{margin-bottom:0}
     .movement{
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -312,7 +314,7 @@
     }
     .person-photo{
       width:calc(100% - 64px);
-      aspect-ratio:4 / 3;
+      aspect-ratio:1.45 / 1;
       margin:34px 32px 30px;
       border-radius:16px;
       background-image:url('assets/team-sprite.jpg');
@@ -353,9 +355,10 @@
     .person-org{
       color:var(--accent);
       font-weight:750;
-      margin-bottom:26px;
+      min-height:58px;
+      margin-bottom:18px;
     }
-    .person-card p{font-size:1rem}
+    .person-card p{font-size:1rem;margin-top:0}
     .logo-zone{
       min-height:92px;
       margin-top:auto;
@@ -507,6 +510,7 @@
     <!-- SECTIE 4: VISUEEL HART, DRIE BLOKKEN -->
     <section class="movement-section" id="beweging">
       <div class="container">
+        <div class="movement-intro"><h1>Hoe komen we verder?</h1></div>
         <div class="movement">
           <article class="movement-card">
             <h1>1. Zien</h1>
@@ -556,7 +560,7 @@
     <!-- SECTIE 7: DRIE PERSONEN, GELIJKE OPMAAK -->
     <section class="people" id="wie">
       <div class="container">
-        <h1>Wie erachter zitten</h1>
+        <h1>Initiatiefnemers</h1>
         <div class="people-grid">
           <article class="person-card">
             <div class="person-photo person-photo--genieke" role="img" aria-label="Genieke Hertoghs"></div>

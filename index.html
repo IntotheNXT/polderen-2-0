@@ -313,19 +313,20 @@
       background:var(--accent);
     }
     .person-photo{
+      display:block;
       width:calc(100% - 64px);
-      aspect-ratio:1.45 / 1;
+      aspect-ratio:4 / 3;
       margin:34px 32px 30px;
       border-radius:16px;
-      background-image:url('assets/team-sprite.jpg');
-      background-size:400% 200%;
-      background-repeat:no-repeat;
-      background-color:#e4dfd5;
+      overflow:hidden;
+      background:#e4dfd5;
+      object-fit:cover;
+      object-position:center;
       filter:grayscale(100%);
     }
-    .person-photo--fons{background-position:0% 0%}
-    .person-photo--bas{background-position:33.333% 0%}
-    .person-photo--genieke{background-position:33.333% 100%}
+    .person-photo--genieke{object-position:center 34%}
+    .person-photo--fons{object-position:center 32%}
+    .person-photo--bas{object-position:center 38%}
     .person-name-row{
       display:flex;
       align-items:center;
@@ -454,7 +455,7 @@
         <a href="#vastloopt">Waar het vastloopt</a>
         <a href="#beweging">Zien · Verenigen · Verankeren</a>
         <a href="#voor-wie">Voor wie</a>
-        <a href="#wie">Wie erachter zitten</a>
+        <a href="#wie">Initiatiefnemers</a>
         <a class="button" href="mailto:phyllis@thtconsulting.com">Neem contact op</a>
       </nav>
     </div>
@@ -563,7 +564,7 @@
         <h1>Initiatiefnemers</h1>
         <div class="people-grid">
           <article class="person-card">
-            <div class="person-photo person-photo--genieke" role="img" aria-label="Genieke Hertoghs"></div>
+            <img class="person-photo person-photo--genieke" src="assets/genieke-hertoghs.webp.png" alt="Genieke Hertoghs">
             <div class="person-name-row"><h3>Genieke Hertoghs</h3><a class="linkedin-icon" href="https://nl.linkedin.com/in/communicatiecoach" target="_blank" rel="noopener" aria-label="LinkedIn-profiel van Genieke Hertoghs" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/></svg></a></div>
             <div class="person-org">Subconscious Impact</div>
             <p>Onderzoekt wat er gebeurt vóórdat een dilemma bespreekbaar wordt: waarom we willen overtuigen, waarom een ander perspectief als weerstand voelt, en hoe je die automatische reflex leert herkennen.</p>
@@ -571,7 +572,7 @@
           </article>
 
           <article class="person-card">
-            <div class="person-photo person-photo--fons" role="img" aria-label="Fons Trompenaars"></div>
+            <img class="person-photo person-photo--fons" src="assets/fons-trompenaars.jpg.png" alt="Fons Trompenaars">
             <div class="person-name-row"><h3>Fons Trompenaars</h3><a class="linkedin-icon" href="https://nl.linkedin.com/in/fons-trompenaars-a9362" target="_blank" rel="noopener" aria-label="LinkedIn-profiel van Fons Trompenaars" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/></svg></a></div>
             <div class="person-org">Trompenaars Hampden-Turner</div>
             <p>Al decennia onderzoekt Fons hoe mensen en organisaties omgaan met waarden die allebei belangrijk zijn en toch lijken te botsen.</p>
@@ -1118,7 +1119,7 @@
           </article>
 
           <article class="person-card">
-            <div class="person-photo person-photo--bas" role="img" aria-label="Bas Kemme"></div>
+            <img class="person-photo person-photo--bas" src="assets/bas-kemme.jpg.png" alt="Bas Kemme">
             <div class="person-name-row"><h3>Bas Kemme</h3><a class="linkedin-icon" href="https://nl.linkedin.com/in/bas-kemme" target="_blank" rel="noopener" aria-label="LinkedIn-profiel van Bas Kemme" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/></svg></a></div>
             <div class="person-org">Trompenaars Hampden-Turner en IntotheNXT</div>
             <p>Bas begeleidt al 25 jaar besturen en directies bij strategie, leiderschap en de managementcondities die nodig zijn om strategie ook echt waar te maken.</p>

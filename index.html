@@ -288,8 +288,11 @@
       border-top:1px solid var(--line);
     }
     .gov-intro{
-      max-width:900px;
+      max-width:1040px;
       margin-bottom:42px;
+    }
+    .gov-intro > p:not(.lead-question){
+      max-width:1040px;
     }
     .gov-intro .lead-question{
       margin-top:26px;
@@ -328,17 +331,22 @@
       font-size:1.38rem;
       line-height:1.18;
       margin-bottom:18px;
+      min-height:96px;
     }
     .gov-card p{
       font-size:1rem;
       margin-bottom:0;
     }
+    .gov-card > p:not(.question){
+      min-height:122px;
+    }
     .gov-card .question{
-      margin-top:auto;
+      margin-top:18px;
       padding-top:22px;
       border-top:1px solid var(--line);
       color:var(--ink);
       font-weight:750;
+      min-height:154px;
     }
     .people{
       background:var(--paper);
@@ -489,6 +497,7 @@
       .movement-card{min-height:auto}.movement-card:not(:last-child):after{display:none}
       .people-grid{grid-template-columns:1fr}
       .gov-grid{grid-template-columns:1fr}
+      .gov-card h3,.gov-card > p:not(.question),.gov-card .question{min-height:0}
       .person-card{min-height:auto}
       .issue-list{grid-template-columns:1fr}
     }

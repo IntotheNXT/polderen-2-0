@@ -283,6 +283,63 @@
       width:100%;
     }
     .audience p{font-size:1.16rem;max-width:none;width:100%}
+    .gov-dilemmas{
+      background:linear-gradient(180deg,#fffdf8 0%,#f4eee6 100%);
+      border-top:1px solid var(--line);
+    }
+    .gov-intro{
+      max-width:900px;
+      margin-bottom:42px;
+    }
+    .gov-intro .lead-question{
+      margin-top:26px;
+      padding:24px 28px;
+      border-left:4px solid var(--accent);
+      background:rgba(255,255,255,.72);
+      border-radius:0 16px 16px 0;
+      color:var(--ink);
+      font-size:1.22rem;
+      font-weight:750;
+      max-width:none;
+    }
+    .gov-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .gov-card{
+      display:flex;
+      flex-direction:column;
+      padding:30px;
+      min-height:360px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.9);
+      box-shadow:0 10px 30px rgba(21,32,43,.04);
+    }
+    .gov-card .num{
+      color:var(--accent);
+      font-size:.82rem;
+      font-weight:850;
+      letter-spacing:.08em;
+      margin-bottom:22px;
+    }
+    .gov-card h3{
+      font-size:1.38rem;
+      line-height:1.18;
+      margin-bottom:18px;
+    }
+    .gov-card p{
+      font-size:1rem;
+      margin-bottom:0;
+    }
+    .gov-card .question{
+      margin-top:auto;
+      padding-top:22px;
+      border-top:1px solid var(--line);
+      color:var(--ink);
+      font-weight:750;
+    }
     .people{
       background:var(--paper);
       border-top:1px solid var(--line);
@@ -431,6 +488,7 @@
       .movement{grid-template-columns:1fr}
       .movement-card{min-height:auto}.movement-card:not(:last-child):after{display:none}
       .people-grid{grid-template-columns:1fr}
+      .gov-grid{grid-template-columns:1fr}
       .person-card{min-height:auto}
       .issue-list{grid-template-columns:1fr}
     }
@@ -455,6 +513,7 @@
         <a href="#vastloopt">Waar het vastloopt</a>
         <a href="#beweging">Zien · Verenigen · Verankeren</a>
         <a href="#voor-wie">Voor wie</a>
+        <a href="#overheid">Overheid</a>
         <a href="#wie">Initiatiefnemers</a>
         <a class="button" href="mailto:phyllis@thtconsulting.com">Neem contact op</a>
       </nav>
@@ -557,7 +616,41 @@
       </div>
     </section>
 
-    <!-- SECTIE 7: DRIE PERSONEN, GELIJKE OPMAAK -->
+    <!-- SECTIE 7: TOEPASSING OP DE OVERHEID -->
+    <section class="gov-dilemmas" id="overheid">
+      <div class="container">
+        <div class="gov-intro">
+          <h1>Drie dilemma’s die we binnen de overheid zien</h1>
+          <p>Op alle niveaus binnen de overheid komen spanningen terug waarin beide kanten iets waardevols beschermen. De uitdaging is niet om één kant te kiezen, maar om te ontdekken hoe de waarden elkaar kunnen versterken.</p>
+          <p class="lead-question">Hoe kan de overheid sneller en slagvaardiger handelen en tegelijkertijd de zorgvuldigheid, verantwoording en het publieke vertrouwen versterken?</p>
+        </div>
+
+        <div class="gov-grid">
+          <article class="gov-card">
+            <div class="num">01</div>
+            <h3>Snel handelen <strong>én</strong> zorgvuldig en betrouwbaar besluiten</h3>
+            <p>Meer snelheid kan fouten veroorzaken. Steeds meer zekerheid zoeken kan handelen en leren juist vertragen.</p>
+            <p class="question">Hoe kunnen snelle, begrensde tests de betrouwbaarheid vergroten en gerichte controles de uitvoering versnellen?</p>
+          </article>
+
+          <article class="gov-card">
+            <div class="num">02</div>
+            <h3>Bestuurlijke controle <strong>én</strong> gedelegeerde beslissingsruimte</h3>
+            <p>Te veel controle maakt teams afhankelijk van goedkeuring. Delegeren zonder heldere kaders maakt verantwoordelijkheden onduidelijk.</p>
+            <p class="question">Hoe kunnen duidelijke mandaten en transparante terugkoppeling meer beslissingsruimte mogelijk maken én het bestuurlijke overzicht verbeteren?</p>
+          </article>
+
+          <article class="gov-card">
+            <div class="num">03</div>
+            <h3>Zelfstandig resultaten boeken <strong>én</strong> gezamenlijk afstemmen en uitvoeren</h3>
+            <p>Zelfstandig handelen kan versnippering geven. Te veel afstemming kan leiden tot overlegdruk en onduidelijk eigenaarschap.</p>
+            <p class="question">Hoe kunnen gezamenlijke afspraken organisaties juist meer ruimte geven om zelfstandig te handelen, terwijl hun ervaringen de gezamenlijke aanpak verbeteren?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTIE 8: DRIE PERSONEN, GELIJKE OPMAAK -->
     <section class="people" id="wie">
       <div class="container">
         <h1>Initiatiefnemers</h1>

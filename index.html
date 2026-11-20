@@ -311,12 +311,14 @@
     .movement-card h1{
       font-size:clamp(2.4rem,3.5vw,3.8rem);
       margin-bottom:12px;
+      min-height:128px;
     }
     .movement-card .subtitle{
       color:var(--ink);
       font-weight:800;
       font-size:1.12rem;
       margin-bottom:26px;
+      min-height:58px;
     }
     .movement-card p{font-size:1rem}
     .movement-card .accent-quote{
@@ -558,6 +560,7 @@
       .hero-copy,.story{grid-template-columns:1fr;gap:32px}
       .movement{grid-template-columns:1fr}
       .movement-card{min-height:auto}.movement-card:not(:last-child):after{display:none}
+      .movement-card h1,.movement-card .subtitle{min-height:0}
       .people-grid{grid-template-columns:1fr}
       .gov-grid{grid-template-columns:1fr}
       .gov-card h3,.gov-card > p:not(.question),.gov-card .question{min-height:0}
